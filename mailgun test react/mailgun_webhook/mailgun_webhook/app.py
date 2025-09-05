@@ -10,7 +10,7 @@ class Mailgun(db.Model):
     id = db.Column(db.Integer, primary_key = True)
     subject = db.Column(db.String(200), nullable = False)
     sent_date = db.Column(db.String(25), nullable = False)
-    print('helo1')
+    print('helo134344')
     def __repr__(self):
         return f'Task: {self.id}'
 
