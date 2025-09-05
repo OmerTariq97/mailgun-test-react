@@ -19,8 +19,12 @@ class Mailgun(db.Model):
 def mailgun_recieve_email():
     payload = request.data
     payload_parsed = json.loads(payload)
+<<<<<<< HEAD
     print('helo')
     print('helo1')
+=======
+
+>>>>>>> parent of 5eb9f23 (helo)
     email = payload_parsed['event-data']['recipient']
     subject = payload_parsed['event-data']['message']['headers']['subject']
     timestamp = payload_parsed['event-data']['timestamp']
