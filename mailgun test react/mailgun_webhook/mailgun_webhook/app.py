@@ -11,6 +11,7 @@ class Mailgun(db.Model):
     subject = db.Column(db.String(200), nullable = False)
     sent_date = db.Column(db.String(25), nullable = False)
     print('helo134344')
+    print('undo1')
     def __repr__(self):
         return f'Task: {self.id}'
 
