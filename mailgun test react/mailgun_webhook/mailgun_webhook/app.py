@@ -20,6 +20,7 @@ def mailgun_recieve_email():
     payload = request.data
     payload_parsed = json.loads(payload)
     print('helo')
+    print('helo1')
     email = payload_parsed['event-data']['recipient']
     subject = payload_parsed['event-data']['message']['headers']['subject']
     timestamp = payload_parsed['event-data']['timestamp']
