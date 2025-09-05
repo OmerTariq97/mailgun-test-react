@@ -19,6 +19,7 @@ class Mailgun(db.Model):
 def mailgun_recieve_email():
     payload = request.data
     payload_parsed = json.loads(payload)
+    print('helo')
 
     email = payload_parsed['event-data']['recipient']
     subject = payload_parsed['event-data']['message']['headers']['subject']
